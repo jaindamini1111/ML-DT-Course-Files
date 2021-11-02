@@ -9,3 +9,22 @@ Auckland, New Zealand
 fadi.fayez@manukau.ac.nz
 
 https://www.kaggle.com/faizunnabi/autism-screening
+
+
+### EDA is present in notebook
+Steps to reproduce - Start a juypter kernel and run the notebook.
+
+### Model training with hyperparamter tuning is also present in the notebook
+Steps to reproduce - Same as above.
+
+### Exporting notebook to script - train.py
+
+### Model deployment is done with Flask - predict.py
+Steps to run - Open a terminal and type: `python predict.py` You will get a screen which asks you to upload a file, Please upload testautism.csv as the uploading file and click on submit to fetch results.
+
+### Dependency and enviroment management - requirements.txt
+
+### Containerization - Dockerfile
+
+### Cloud deployment - No deployment is done on the cloud.
+
