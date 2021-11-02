@@ -25,6 +25,8 @@ Steps to run - Open a terminal and type: `python predict.py` You will get a scre
 ### Dependency and enviroment management - requirements.txt
 
 ### Containerization - Dockerfile
+Steps to build docker image - `docker build -t give_any_name_you_like .`
+Steps to run docker - `docker run -it -p 6969:6969 give_the_name_you_gave_above_while_buildingdocker`
 
 ### Cloud deployment - No deployment is done on the cloud.
 
