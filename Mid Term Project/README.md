@@ -20,7 +20,7 @@ Steps to reproduce - Same as above.
 ### Exporting notebook to script - train.py
 
 ### Model deployment is done with Flask - predict.py
-Steps to run - Open a terminal and type: `python predict.py` You will get a screen which asks you to upload a file, Please upload testautism.csv as the uploading file and click on submit to fetch results.
+Steps to run - Open a terminal and type: `python predict.py` You will get a localhost link in terminal itself click on it and you will get a screen which asks you to upload a file, Please upload testautism.csv as the uploading file and click on submit to fetch results.
 
 ### Dependency and enviroment management - requirements.txt
 
