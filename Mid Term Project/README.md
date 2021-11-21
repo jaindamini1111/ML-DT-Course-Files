@@ -20,11 +20,14 @@ Steps to reproduce - Same as above.
 ### Exporting notebook to script - train.py
 
 ### Model deployment is done with Flask - predict.py
-Steps to run - Open a terminal and type: `python predict.py` You will get a screen which asks you to upload a file, Please upload testautism.csv as the uploading file and click on submit to fetch results.
+Steps to run - Open a terminal and type: `python predict.py` You will get a localhost link in terminal itself click on it and you will get a screen which asks you to upload a file, Please upload testautism.csv as the uploading file and click on submit to fetch results.
 
 ### Dependency and enviroment management - requirements.txt
 
-### Containerization - Dockerfile
+### Containerization - Dockerfile (done on windows)
+Steps to build docker image - `docker build -t give_any_name_you_like .`
+Steps to run docker - `docker run -it -p 6969:6969 give_the_name_you_gave_above_while_buildingdocker`
+Access it after above steps done - `http://localhost:6969/`
 
 ### Cloud deployment - No deployment is done on the cloud.
 
