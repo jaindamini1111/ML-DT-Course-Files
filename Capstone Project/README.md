@@ -21,44 +21,17 @@ Table 2. Classes to predict (Actions). Adapted from Ertam & Kaya, 2018.
 
 The variable we want to predict is from the action feature.
 
-### How to Run it Locally
+### Description of the repo
 
-EDA is present in notebook
+`notebook.ipynb`: 
 
-Model training with hyperparamter tuning is also present in the notebook
+<> EDA, feature importance analysis
+<>Feature enginnering 
+<> Model selection with hyperparamter tuning
 
-Exporting notebook to script - train.py
+Exporting notebook to script; training final model and saving it to pickle - `train.py`
 
-Model deployment is done with Flask - predict.py
-
-Dependency and enviroment management - requirements.txt, pipfile
-
-Containerization - Dockerfile
-
-The environment and dependency manager used in this project is Pipenv. If you don't have it already installed, you can do it 
-using (assuming Python is already installed in the system)
-
-`pip3 install pipenv`
-
-If it doens't work, you can try
-
-`pip install pipenv`
-
-Now, at the project directory, we can install the necessary libraries and dependencies from the Pipfile using:
-
-`pipenv install`
-
-If you want to run the notebook, use the following command to install the extra dependencies:
-
-`pipenv install --dev`
-
-Now activate the environment:
-
-`pipenv shell`
-
-if you want to retrain the model and resave the model you can do it by running
-
-`python train.py`
+Python script to run Flask app (loading, predicting and serving it via a web service) - `predict.py`
 
 To deploy the Flask app locally and run it directly
 
@@ -67,6 +40,10 @@ To deploy the Flask app locally and run it directly
 So, the project should then be running locally at http://localhost:6969
 
 To test the app using a POST request we can upload the `test_firewall.csv`
+
+Dependency and enviroment management - `requirements.txt`, `pipfile`
+
+Containerization - `Dockerfile`
 
 We can build and run the Docker image locally with the Dockerfile provided.
 
